@@ -42,7 +42,8 @@ CREATE TABLE adlist
     UNIQUE(address, type)
 );
 INSERT INTO adlist VALUES(1,'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',1,1748690792,1748690792,'Migrated from /etc/pihole/adlists.list',1748690792,184937,1,2,0,0);
-INSERT INTO adlist VALUES(3,'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt',1,1748692719,1748692719,NULL,1748692938,167135,0,1,167135,0);
+INSERT INTO adlist VALUES(3,'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt',1,1748692719,1748692719,NULL,1748692938,167135,0,2,167135,0);
+INSERT INTO adlist VALUES(4,'https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt',1,1748693152,1748693152,'PRO+',1748693159,204423,0,1,204423,0);
 CREATE TABLE domainlist_by_group
 (
     domainlist_id INTEGER NOT NULL REFERENCES domainlist (id) ON DELETE CASCADE,
